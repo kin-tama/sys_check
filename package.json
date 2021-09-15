@@ -15,7 +15,7 @@
   },
   "scripts": {
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp build",
+    "build": "gulp docs",
     "start": "gulp start"
   },
   "browserslist": [

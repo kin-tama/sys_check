@@ -7,7 +7,7 @@ const del = require("del");
 const server = (done) => {
     sync.init({
         server: {
-            baseDir: 'build'
+            baseDir: 'docs'
         },
         cors: true,
         notify: false,
@@ -21,9 +21,9 @@ exports.server = server;
 // Watcher
 
 const watcher = () => {
-    gulp.watch("source/*.css", gulp.series("build")).on("change", sync.reload);
-    gulp.watch("source/*.html", gulp.series("build")).on("change", sync.reload);
-    gulp.watch("source/*.js", gulp.series("build")).on("change", sync.reload);
+    gulp.watch("source/*.css", gulp.series("docs")).on("change", sync.reload);
+    gulp.watch("source/*.html", gulp.series("docs")).on("change", sync.reload);
+    gulp.watch("source/*.js", gulp.series("docs")).on("change", sync.reload);
 }
 
 exports.default = gulp.series(
@@ -40,7 +40,7 @@ const copy = () => {
     ], {
         base: "source"
     })
-        .pipe(gulp.dest("build"));
+        .pipe(gulp.dest("docs"));
 };
 
 exports.copy = copy;
@@ -49,12 +49,12 @@ exports.copy = copy;
 // delete
 
 const clean = () => {
-    return del("build");
+    return del("docs");
 };
 
 exports.clean = clean;
 
-// build
+// docs
 
 const build = gulp.series(
     clean,
