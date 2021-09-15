@@ -1,0 +1,21 @@
+.main {
+    display: flex;
+    box-sizing: border-box;
+    font-family: 'Tahoma';
+    outline: 5px solid darkblue;
+    height: 99vh;
+}
+.table {
+    display: block;
+}
+.rc {
+    padding-left: 30px;
+}
+
+td {
+    border-bottom: 1px solid grey;
+}
+
+.table_header {
+    font-weight: bold;
+}
