@@ -21,9 +21,9 @@ exports.server = server;
 // Watcher
 
 const watcher = () => {
-    gulp.watch("source/*.css", gulp.series("docs")).on("change", sync.reload);
-    gulp.watch("source/*.html", gulp.series("docs")).on("change", sync.reload);
-    gulp.watch("source/*.js", gulp.series("docs")).on("change", sync.reload);
+    gulp.watch("source/*.css", gulp.series('build')).on("change", sync.reload);
+    gulp.watch("source/*.html", gulp.series('build')).on("change", sync.reload);
+    gulp.watch("source/*.js", gulp.series('build')).on("change", sync.reload);
 }
 
 exports.default = gulp.series(

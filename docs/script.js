@@ -13,8 +13,8 @@ var orientation = window.screen.orientation;
 var viewportHeight = window.visualViewport.height
 var viewportWidth = window.visualViewport.width
 
-var tabCPU = document.getElementById('CPU');
-var tabOS = document.getElementById('OS');
+var tabCPU = document.getElementById('cpu');
+var tabOS = document.getElementById('os');
 var tabDevice = document.getElementById('dev');
 var tabBrowser = document.getElementById('browser');
 var tabWidth = document.getElementById('width');
