@@ -12,6 +12,7 @@ var depth = window.screen.colorDepth;
 var orientation = window.screen.orientation;
 var viewportHeight = window.visualViewport.height
 var viewportWidth = window.visualViewport.width
+var ppi = window.devicePixelRatio;
 
 var tabCPU = document.getElementById('cpu');
 var tabOS = document.getElementById('os');
@@ -22,6 +23,7 @@ var tabHeight = document.getElementById('heigth');
 var tabOrientation = document.getElementById('orientation');
 var tabDepth = document.getElementById('depth');
 var tabAgent = document.getElementById('agent');
+var tabPPI = document.getElementById('ppi');
 var main = document.getElementById('main');
 
 tabCPU.textContent = cpu.architecture ? cpu.architecture : "unavailable";
@@ -32,6 +34,7 @@ tabWidth.textContent = `${width ?? 'unavailable'} pixels`;
 tabHeight.textContent = `${height ?? 'unavailable'} pixels`;
 tabOrientation.textContent = `${orientation.type ?? 'unavailable'}`;
 tabDepth.textContent = `${depth ?? 'unavailable'} bit`;
+tabPPI.textContent = `${ppi ?? 'unavailable'}`;;
 tabAgent.textContent = window.navigator.userAgent;
 main.style.width = viewportWidth;
 main.style.height = viewportHeight;
