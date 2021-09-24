@@ -1,6 +1,0 @@
-<svg width="100" height="10" viewBox="0 0 100 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 0H100V10H0V0Z" fill="white"/>
-<rect width="50" height="10" fill="black"/>
-<rect x="50" width="50" height="10" fill="white"/>
-<path d="M0 0V-1H-1V0H0ZM100 0H101V-1H100V0ZM100 10V11H101V10H100ZM0 10H-1V11H0V10ZM0 1H100V-1H0V1ZM99 0V10H101V0H99ZM100 9H0V11H100V9ZM1 10V0H-1V10H1Z" fill="black"/>
-</svg>
