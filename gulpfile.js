@@ -22,6 +22,7 @@ exports.server = server;
 
 const watcher = () => {
     gulp.watch("source/*.css", gulp.series('build')).on("change", sync.reload);
+    gulp.watch("source/*.svg", gulp.series('build')).on("change", sync.reload);
     gulp.watch("source/*.html", gulp.series('build')).on("change", sync.reload);
     gulp.watch("source/*.js", gulp.series('build')).on("change", sync.reload);
 }
@@ -36,7 +37,8 @@ const copy = () => {
     return gulp.src([
         "source/*.js",
         "source/*.css",
-        "source/*.html"
+        "source/*.html",
+        "source/*.svg"
     ], {
         base: "source"
     })

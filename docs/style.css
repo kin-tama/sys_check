@@ -1,5 +1,6 @@
 .main {
     display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     font-family: 'Tahoma';
     outline: 5px solid darkblue;
@@ -18,4 +19,14 @@ td {
 
 .table_header {
     font-weight: bold;
+}
+
+.rooler {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    overflow: hidden;
+    height: 100px;
+    background-image: url("ruler.svg");
+    background-repeat: repeat-x;
 }
