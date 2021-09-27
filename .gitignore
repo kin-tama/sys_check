@@ -2,8 +2,6 @@
 
 .idea
 
-src/components/StoresPage/StoresDataPage/Stats/fakeData.js
-
 # dependencies
 node_modules/
 ./**.pnp
